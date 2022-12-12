@@ -1,0 +1,8 @@
+#table1 {
+    border-collapse: collapse;
+    
+  }
+.th {
+    background-color: #04AA6D;
+    color: white;
+}
