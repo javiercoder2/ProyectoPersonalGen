@@ -20,6 +20,7 @@ const App = ()=> {
             <Routes>
                 <Route path="/NavBar" element={<NavBar/>}/>
                 <Route path="/Auto" element={<AutoPage/>}/>
+               {/*  //Con /Usuario llamamos al trabajo visto hoy en clases */}
                 <Route path="/Usuario" element={<UsuarioClasePage/>}/>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/Back" element={<BackgroundPage/>}/>

@@ -6,6 +6,7 @@ import {
   BotonFormulario,
 } from "../components";
 
+//Creamos plantillas que s emodificaran luego para no tener que ir ingresando dato tras dato
 const usuario1 = [
   {
     nombre: "Joseph",
@@ -34,6 +35,7 @@ const usuario2 = {
   rut: "17456329-9",
 };
 
+//Creamos las constantes que nos ayudaran a llevarnos a un punto modificable o no de la pagina existente
 const UsuarioClasePage = () => {
   const navigate = useNavigate();
   const handleOnClick = useCallback(() => navigate("/Auto", {}, [navigate]));

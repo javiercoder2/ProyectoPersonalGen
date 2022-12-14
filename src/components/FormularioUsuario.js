@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Boton from "./Boton";
 
+//creamos formulario para poder comenzar con la realizacion de botones y sus funciones
 const initialUsuario = {
   nombre: "",
   apellido: "",
@@ -17,6 +17,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
   useEffect(() => {
     if (usuarioEditado !== null) {
       setUsuario(usuarioEditado);
+      //Usuario editad se realizara su propio cambio acorde a lo que esta en else
     } else {
       setUsuario({
         nombre: "",
@@ -57,7 +58,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
           </label>
           <input
             class="form-control"
-            placeholder="11111111-1"
+            placeholder="322312312-1"
             type="text"
             id="id"
             //para que mi formulario sea capaz de crear un usuario debemos agregarle a los inpur
@@ -73,7 +74,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
           </label>
           <input
             class="form-control"
-            placeholder="Juan"
+            placeholder="Javier"
             type="text"
             id="Nombre"
             name="nombre"
@@ -87,7 +88,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
           </label>
           <input
             class="form-control"
-            placeholder="Perez"
+            placeholder="sepulveda"
             type="text"
             id="Apellido"
             name="apellido"
@@ -101,11 +102,12 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
           </label>
           <input
             class="form-control"
-            placeholder="juanperez@correo.cl"
+            placeholder="javier@correo.cl"
             type="email"
             id="Correo"
             name="correo"
             value={correo}
+            //Cuando exista un cambio se procedera a realizar una accion
             onChange={handleInputChange}
           />
         </div>
@@ -113,21 +115,27 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
           <button
             type="button"
             class="btn btn-success"
+                        //Cuando exista un click en el boton se procedera a realizar una accion
+
             onClick={() => userEdit(usuario)}
           >
             Editar usuario
           </button>
         ) : (
           <button
+                                  //Cuando exista un click en el boton se procedera a realizar una accion
+
             type="button"
             class="btn btn-success"
             onClick={() => userAdd(usuario)}
           >
-            Ingresar usuario
+            Ingresar usuario nuevo
           </button>
         )}
 
         {usuarioEditado !== null ? (
+                                  //Cuando exista un click en el boton se procedera a realizar una accion
+
           <button
             type="button"
             class="btn btn-danger"

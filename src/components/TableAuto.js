@@ -1,5 +1,8 @@
 import React from "react";
 
+
+//Se crea tabla par aasi poder mandar la informacion
+// a las constantes y funciones que haran modificaciones
 const TableAuto = () => {
   return (
     <div class="container-3 text-center">
