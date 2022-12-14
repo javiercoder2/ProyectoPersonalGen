@@ -1,6 +1,6 @@
 import React from "react";
 import video from "./../Assets/video.mp4";
-import "./Boton.css";
+import "./Boton2";
 
 
 const BackgroundComponent = ()=> {

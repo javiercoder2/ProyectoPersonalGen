@@ -7,9 +7,9 @@ const TableAuto = () => {
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Acciones</th>
           </tr>
         </thead>
         <tbody>

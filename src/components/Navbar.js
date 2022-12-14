@@ -117,29 +117,29 @@ function Navbar() {
                           <CardItem
                               src='images/img-6.jpg'
                               text='Exploration of new Languages. I speak four of them!'
-                              label='Adventure'
+                              label='Poliglot'
                               path='/services' />
                           <CardItem
                               src='images/img-7.jpg'
                               text='Self-Instructing by nature'
-                              label='Luxury'
+                              label='Learning'
                               path='/services' />
                       </ul>
                       <ul className='cards__items'>
                           <CardItem
                               src='images/img-5.jpg'
-                              text='These are my best'
-                              label='Mystery'
+                              text='These are my Best Programming Languages'
+                              label='Programming Languages '
                               path='/services' />
                           <CardItem
                               src='images/img-9.jpg'
-                              text='Experience Football on Top of the Himilayan Mountains'
-                              label='Adventure'
+                              text='Personal skills which are part of me'
+                              label='Soft Skills'
                               path='/products' />
                           <CardItem
                               src='images/user.png'
-                              text='Ride through the Sahara Desert on a guided camel tour'
-                              label='Adrenaline'
+                              text='The things I love to do and how I see myself at work'
+                              label='Hobbies and Likes'
                               path='/sign-up' />
                       </ul>
                   </div>

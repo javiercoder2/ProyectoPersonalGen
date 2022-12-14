@@ -9,6 +9,9 @@ import Personal from "./pages/Personal";
 import Professional from "./pages/Professional";
 import SignupPage from "./pages/Sign-up";
 import './App.css';
+import HomePage from './pages/Home';
+import HSectionPage from "./pages/HsectionPage";
+import UsuarioClasePage from './pages/Usuario';
 
 
 const App = ()=> {
@@ -17,14 +20,15 @@ const App = ()=> {
             <Routes>
                 <Route path="/NavBar" element={<NavBar/>}/>
                 <Route path="/Auto" element={<AutoPage/>}/>
-                <Route path="/Usuario" element={<UsuarioPage/>}/>
-                <Route path="/B" element={<BotonPage/>}/>
+                <Route path="/Usuario" element={<UsuarioClasePage/>}/>
+                <Route path="/" element={<HomePage/>}/>
                 <Route path="/Back" element={<BackgroundPage/>}/>
                 <Route path="/Professional" element={<Professional/>}/>
                 <Route path="/Personal" element={<Personal/>}/>
                 <Route path="/sign-up" element={<SignupPage/>}/>
+                <Route path="/H" element={<HSectionPage/>}/>
 
-{/*                 <Route path="/" element={<HomePage/>}/> */}
+
 
             </Routes>
         </BrowserRouter>

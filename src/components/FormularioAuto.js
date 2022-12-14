@@ -1,51 +1,41 @@
 import React from "react";
+import BotonFormulario from "./Boton";
 
 const FormularioAuto = () => {
-  return (
-    <><div class="container border border-dark p-8 bg-secondary bg-success "></div><h1 strong class="text-center text-decoration-underline">
-          Formulario Usuario
-      </h1><form>
-              <div class="mb-6">
-                  <label for="exampleInputEmail1" class="form-label">
-                      Nombre
-                  </label>
-                  <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
-              </div>
-              <div class="mb-6">
-                  <label for="exampleInputEmail1" class="form-label">
-                      Apellido
-                  </label>
-                  <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
-              </div>
-              <div class="mb-6">
-                  <label for="exampleInputEmail1" class="form-label">
-                      Numero
-                  </label>
-                  <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
-              </div>
-              <div class="mb-6">
-                  <label for="exampleInputEmail1" class="form-label">
-                      Email
-                  </label>
-                  <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp" />
-              </div>
-          </form></>
-                  );
-};
+    return (
+        <div class="card container mb-5" >
+            <form>
+                <h1>Ingrese Auto</h1>
+                <div class="mb-3" >
+                    <label class="form-label" for="id">ID</label>
+                    <input class="form-control" type="text" id="id" placeholder="0001" />
+                </div>
+                <div class="mb-3" >
+                    <label class="form-label" for="MarcaAuto">Marca del Auto</label>
+                    <input class="form-control" type="text" id="MarcaAuto" placeholder="Nissan"/>
+                </div>
+                <div class="mb-3" >
+                    <label class="form-label" for="ModeloAuto">Modelo</label>
+                    <input class="form-control" type="text" id="ModeloAuto" placeholder="Versa" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="ColorAuto">Selecione Color</label>
+                    <select id="ColorAuto" class="form-select" aria-label="Default select example">
+                        <option selected>Color</option>
+                        <option value="Azul" class="text-azul">Azul</option>
+                        <option value="Verde" class="text-secondary">Verde</option>
+                        <option value="Rojo" class="text-danger">Rojo</option>
+                        <option value="Gris" class="text-white-50">Gris</option>
+                        <option value="Blanco" class="text-white">Blanco</option>
+                    </select>
+                </div>
+                <BotonFormulario infoBoton={'Agregar auto'}/>
+                <br/>
+            </form>
+            
+        </div>
+    )
+}
+
 export default FormularioAuto;
+

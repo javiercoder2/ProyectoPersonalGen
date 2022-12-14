@@ -1,13 +1,17 @@
 import React from "react";
-import "./Boton.css";
+//componente dinámico
+const BotonFormulario = ({infoBoton, handleOnClick}) => {
+    return (
+        <div>
+        <button 
+        type="button" 
+        class="btn btn-primary"
+        onClick={()=>{
+            handleOnClick();
+        }}
+        >{infoBoton}</button>
+        </div>
+    )
+}
 
-const BotonPage = () => {
-  return (
-    <div className="botonFormulario1" class="d-grid gap-2 d-md-block">
-      <button  class="btn btn-primary" type="button">
-        Enviar
-      </button>
-    </div>
-  );
-};
-export default BotonPage;
+export default BotonFormulario;

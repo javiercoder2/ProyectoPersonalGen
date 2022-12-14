@@ -6,7 +6,7 @@ import './Hsection.css';
 function Hsection() {
   return (
     <div className ='hero-container'>
-      <video src="/video2.mp4"autoPlay loop muted />
+      <video src="/fondo3.mp4" autoPlay loop muted />
 
       <h1>Javier Ignacio Matias Sepulveda Ojeda</h1>
       <p>Contact Me and do some amazing things together!</p>

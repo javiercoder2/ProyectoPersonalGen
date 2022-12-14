@@ -1,22 +1,19 @@
 import React from 'react';
 import '../App.css';
-import Cards from '../components/Cards';
-import Hsection from '../components/Hsection';
-import { Button } from '../components/Boton2';
-import { Navbar } from 'react-bootstrap';
-import '../App.css';
+import Menu from '../components/Menu';
+import '../components/Navbar.css';
+import CardsProfessional from '../components/CardsProffesional';
+
 
 const Professional = () => {
     return(
         <div>
-            
-            <Navbar/>
-            <Button/>
+            <Menu />
+            <div>
+            <h1 className='professional'>Professional Background</h1>
+            </div>
+            <CardsProfessional/>
 
-            <h1 className='professional'>Professional</h1>
-            <Hsection/>
-
-            <Cards/>
         </div>
     )
 }
