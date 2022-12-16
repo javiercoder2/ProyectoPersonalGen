@@ -1,10 +1,11 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   FormularioUsuario,
   TablaUsuarios,
   BotonFormulario,
 } from "../components";
+import{getAllUsers, addUser,editUser, deleteUser} from "../services/User";
 
 //Creamos plantillas que s emodificaran luego para no tener que ir ingresando dato tras dato
 const usuario1 = [
@@ -44,28 +45,57 @@ const UsuarioClasePage = () => {
   const [user, setUser] = useState(usuario1);
   const [usuarioEditado, setUsuarioEditado] = useState(null);
 
-  const userDelete = (rutUsuario) => {
+  useEffect(()=>{
+    getUsers();
+    },[])
+
+
+    const getUsers= async () =>{
+        const usuariosBD = await getAllUsers();
+        setUser(usuariosBD);
+    }
+
+
+/*   const userDelete = (rutUsuario) => {
     //esta funcion filtra mi lista de usuarios
     const changeUser = user.filter((usuario) => usuario.rut != rutUsuario);
     //al momento de ocupar la funcion setState, yo le voy a cambiar el valor TEMPORAL a mis usuarios
     setUser(changeUser);
-  };
+        setUser(editUser);
+  } */
 
-  const userAdd = (usuario) => {
+
+/*   const editUser =(usuarioEditado)=>{
+    const editUser = user.map(usuario => (usuario.rut === usuarioEditado.rut ? usuarioEditado : usuario))
+    setUser(editUser);
+  }
+ */
+const userDelete = async(idUsuario)=>{
+    const usuarioBD = await deleteUser(idUsuario);
+    getUsers();
+}
+
+  const userAdd = async(usuarioAgregado)=>{
+    const usuariosBD = await addUser(usuarioAgregado);
+    getUsers();
+}
+ const userEdit = async(usuarioEditado) =>{
+    const usuarioBD = await editUser(usuarioEditado);
+    getUsers();
+  } 
+
+  
+
+/*   const userAdd = (usuario) => {
     const addUsuario = [
       //mantenme los datos que tengo en user y agregame lo que yo te entrego aqui (usuario)
       ...user,
       usuario,
-    ];
+    ]; */
     //luego actualizamos (o setteamos) el state
-    setUser(addUsuario);
-  };
 
-  const userEdit =(usuarioEditado)=>{
-    const editUser = user.map(usuario => (usuario.rut === usuarioEditado.rut ? usuarioEditado : usuario))
 
-    setUser(editUser);
-  }
+
 
   return (
     <div class="container mt-3">
@@ -75,7 +105,7 @@ const UsuarioClasePage = () => {
             userAdd={userAdd}
             usuarioEditado={usuarioEditado}
             setUsuarioEditado={setUsuarioEditado}
-            userEdit={userEdit}
+            editUser={editUser}
           />
         </div>
       </div>

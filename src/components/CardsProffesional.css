@@ -20,6 +20,8 @@
         rgba(81, 10, 50, 1) 45%,
         rgba(45, 20, 44, 1) 100%
       );
+      padding: 0.2rem 1rem;
+
 }
 
 .card:hover {
@@ -28,7 +30,7 @@
   }
   
   .card-body {
-    padding: 2rem 0 !important;
+    padding: rem 0 !important;
   }
   
   .card-text {
@@ -44,6 +46,8 @@
   .card-img-top {
     transform: scale(1);
     transition: all 0.2s ease-in-out;
+    padding: 0.3rem 1rem;
+
   }
   
   .card-img-top:hover {

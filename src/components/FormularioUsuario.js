@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 
 //creamos formulario para poder comenzar con la realizacion de botones y sus funciones
 const initialUsuario = {
-  nombre: "",
-  apellido: "",
+  name: "",
+  lastname: "",
   correo: "",
-  rut: "",
+  id: "",
 };
 
-const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdit }) => {
+const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUser  }) => {
   const [usuario, setUsuario] = useState(initialUsuario);
-  const { nombre, apellido, correo, rut } = usuario;
+  const { name, lastname, correo, id } = usuario;
   //el hook useEffect siempre esta pendiente de si la variable que tiene dentro de
   //sus corchetes cambia el deberá hacer todo loq ue tiene en su funcion dentro
   //CONSIDERACIÓN es que useEffect siempre corre al menos 1 vez cuando la página carga por primera vez
@@ -20,10 +20,10 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
       //Usuario editad se realizara su propio cambio acorde a lo que esta en else
     } else {
       setUsuario({
-        nombre: "",
-        apellido: "",
+        name: "",
+        lastname: "",
         correo: "",
-        rut: "",
+        id: "",
       });
     }
   }, [usuarioEditado]);
@@ -64,35 +64,36 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
             //para que mi formulario sea capaz de crear un usuario debemos agregarle a los inpur
             //lo siguente
             name="rut"
-            value={rut}
+            value={id}
             onChange={handleInputChange}
+            disabled
           />
         </div>
         <div class="mb-3">
           <label class="form-label" for="id">
-            Nombre
+            name
           </label>
           <input
             class="form-control"
             placeholder="Javier"
             type="text"
             id="Nombre"
-            name="nombre"
-            value={nombre}
+            name="name"
+            value={name}
             onChange={handleInputChange}
           />
         </div>
         <div class="mb-3">
           <label class="form-label" for="id">
-            Apellido
+            lastname
           </label>
           <input
             class="form-control"
             placeholder="sepulveda"
             type="text"
             id="Apellido"
-            name="apellido"
-            value={apellido}
+            name="lastname"
+            value={lastname}
             onChange={handleInputChange}
           />
         </div>
@@ -117,14 +118,13 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
             class="btn btn-success"
                         //Cuando exista un click en el boton se procedera a realizar una accion
 
-            onClick={() => userEdit(usuario)}
+            onClick={() => editUser(usuario)}
           >
             Editar usuario
           </button>
         ) : (
           <button
-                                  //Cuando exista un click en el boton se procedera a realizar una accion
-
+    //Cuando exista un click en el boton se procedera a realizar una accion
             type="button"
             class="btn btn-success"
             onClick={() => userAdd(usuario)}
@@ -134,8 +134,7 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdi
         )}
 
         {usuarioEditado !== null ? (
-                                  //Cuando exista un click en el boton se procedera a realizar una accion
-
+                                  //Cuando exista un click en el boton se procedera a realizar una accio
           <button
             type="button"
             class="btn btn-danger"

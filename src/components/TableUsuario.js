@@ -22,16 +22,16 @@ const TablaUsuarios = ({ usuarios, deleteUser, setUsuarioEditado }) => {
                             realizaremos lo siguiente => */}
           {usuarios.map((usuario) => (
             <tr>
-              <td>{usuario.rut}</td>
-              <td>{usuario.nombre}</td>
-              <td>{usuario.apellido}</td>
+              <td>{usuario.id}</td>
+              <td>{usuario.name}</td>
+              <td>{usuario.lastname}</td>
               <td>{usuario.correo}</td>
               <td>
                 <button
                   type="button"
                   class="btn btn-danger"
                   onClick={() => {
-                    deleteUser(usuario.rut);
+                    deleteUser(usuario.id);
                   }}
                 >
                  Eliminar
