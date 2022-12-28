@@ -5,7 +5,7 @@ import {
   TablaUsuarios,
   BotonFormulario,
 } from "../components";
-import{getAllUsers, addUser,editUser, deleteUser} from "../services/User";
+import{getAllUsers, addUser, editUser, deleteUser } from "../services/User";
 
 //Creamos plantillas que s emodificaran luego para no tener que ir ingresando dato tras dato
 const usuario1 = [
@@ -50,74 +50,75 @@ const UsuarioClasePage = () => {
     },[])
 
 
-    const getUsers= async () =>{
+    const getUsers = async()=>{
         const usuariosBD = await getAllUsers();
         setUser(usuariosBD);
-    }
-
-
-/*   const userDelete = (rutUsuario) => {
-    //esta funcion filtra mi lista de usuarios
-    const changeUser = user.filter((usuario) => usuario.rut != rutUsuario);
-    //al momento de ocupar la funcion setState, yo le voy a cambiar el valor TEMPORAL a mis usuarios
-    setUser(changeUser);
+      }
+    
+      const userAdd = async(usuarioAgregado) =>{
+        //en esta linea agregamos un usuario a la base de datos
+        const usuarioBD = await addUser(usuarioAgregado);
+        //aqui haremos que la tabla de actualice
+        getUsers();
+      }
+    
+      const userEdit = async(usuarioEditado) =>{
+        const usuarioBD = await editUser(usuarioEditado);
+        getUsers();
+      }
+    
+      const userDelete = async(idUsuario)=>{
+        const usuarioBD = await deleteUser(idUsuario);
+        getUsers();
+      }
+    
+     /* Se comentan estas funciones ya que ahora ocuparemos unas que apunten a nuestras apis */
+    
+      /* const userDelete = (rutUsuario) => {
+        //esta funcion filtra mi lista de usuarios
+        const changeUser = user.filter((usuario) => usuario.rut != rutUsuario);
+        //al momento de ocupar la funcion setState, yo le voy a cambiar el valor TEMPORAL a mis usuarios
+        setUser(changeUser);
+      }; */
+    
+      /* const userAdd = (usuario) => {
+        const addUsuario = [
+          //mantenme los datos que tengo en user y agregame lo que yo te entrego aqui (usuario)
+          ...user,
+          usuario,
+        ];
+        //luego actualizamos (o setteamos) el state
+        setUser(addUsuario);
+      }; */
+    
+      /* const userEdit =(usuarioEditado)=>{
+        const editUser = user.map(usuario => (usuario.rut === usuarioEditado.rut ? usuarioEditado : usuario))
+    
         setUser(editUser);
-  } */
-
-
-/*   const editUser =(usuarioEditado)=>{
-    const editUser = user.map(usuario => (usuario.rut === usuarioEditado.rut ? usuarioEditado : usuario))
-    setUser(editUser);
-  }
- */
-const userDelete = async(idUsuario)=>{
-    const usuarioBD = await deleteUser(idUsuario);
-    getUsers();
-}
-
-  const userAdd = async(usuarioAgregado)=>{
-    const usuariosBD = await addUser(usuarioAgregado);
-    getUsers();
-}
- const userEdit = async(usuarioEditado) =>{
-    const usuarioBD = await editUser(usuarioEditado);
-    getUsers();
-  } 
-
-  
-
-/*   const userAdd = (usuario) => {
-    const addUsuario = [
-      //mantenme los datos que tengo en user y agregame lo que yo te entrego aqui (usuario)
-      ...user,
-      usuario,
-    ]; */
-    //luego actualizamos (o setteamos) el state
-
-
-
-
-  return (
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col">
-          <FormularioUsuario
-            userAdd={userAdd}
-            usuarioEditado={usuarioEditado}
-            setUsuarioEditado={setUsuarioEditado}
-            editUser={editUser}
-          />
+      } */
+    
+      return (
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col">
+              <FormularioUsuario
+                userAdd={userAdd}
+                usuarioEditado={usuarioEditado}
+                setUsuarioEditado={setUsuarioEditado}
+                userEdit={userEdit}
+              />
+            </div>
+          </div>
+          <BotonFormulario infoBoton={"Ir a autos"} handleOnClick={handleOnClick} />
+          <hr />
+          <div class="row">
+            <div class="col">
+              <TablaUsuarios usuarios={user} deleteUser={userDelete} setUsuarioEditado={setUsuarioEditado} />
+            </div>
+          </div>
         </div>
-      </div>
-      <BotonFormulario infoBoton={"Ir a autos"} handleOnClick={handleOnClick} />
-      <hr />
-      <div class="row">
-        <div class="col">
-          <TablaUsuarios usuarios={user} deleteUser={userDelete} setUsuarioEditado={setUsuarioEditado} />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default UsuarioClasePage;
+      );
+    };
+    
+    export default UsuarioClasePage;
+    

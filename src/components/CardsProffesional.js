@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import Normet from "../img/Normet.jpg";
-import Poliglota from "../img/poliglota.png";
-import R from "../img/Fundacion.jpg";
+import Normet from "../img/Normet.jpeg";
+import Poliglota from "../img/Poliglota.jpeg";
+import R from "../img/Fundacion.jpeg";
 import "./CardsProffesional.css";
 
 const card = [

@@ -1,6 +1,6 @@
 import React from 'react';
-import './Footer.css';
-import { Button } from './Button';
+import './footer.css';
+import { Button } from './Boton2';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+        Si deseas saber mas sobre mi personalmente
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -28,8 +28,8 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <h2>About Javier</h2>
+            <Link to='/sign-up'>How I work</Link>
             <Link to='/'>Testimonials</Link>
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>

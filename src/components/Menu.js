@@ -73,10 +73,16 @@ function Menu() {
                                 Know Me
                             </Link>
                         </li>
+
                     </ul>
                     {button && <Button buttonStyle="btn--outline">Projects</Button>}
                 </div>
+                
             </nav>
+
+
+
+            
     )
 }
 export default Menu;

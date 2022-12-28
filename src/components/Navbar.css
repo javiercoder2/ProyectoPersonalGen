@@ -1,8 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(174, 2, 134) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
-    display: flex;
-    justify-content: center;
+  background: radial-gradient(circle, rgba(194,15,187,1) 0%, rgba(55,153,208,1) 30%, rgba(189,51,72,1) 71%, rgba(1,12,27,1) 100%, rgb(66, 215, 86) 100%);    justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
@@ -22,7 +19,7 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color: rgb(255, 255, 255);
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -96,7 +93,7 @@
     }
   
     .nav-menu.active {
-      background: #242222;
+      background: #242422;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -160,3 +157,135 @@
       transition: 250ms;
     }
   }
+  .proj-imgbx {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    float:right;
+    width: 400px;
+    height: 200px;
+    max-width: 200%;
+    max-height: 200%;
+  }
+  .proj-imgbx::before {
+    content: "";
+    background: linear-gradient(90.21deg, #790452 -5.91%, #5212e892 111.58%);
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .proj-imgbx:hover::before {
+    height: 100%;
+  }
+  .proj-txtx {
+    position: absolute;
+    text-align: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+  }
+  .proj-imgbx:hover .proj-txtx {
+    top: 50%;
+    opacity: 1;
+  }
+  .proj-txtx h4 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+    color:rgba(10, 178, 245, 0.85);
+  }
+  .proj-txtx span {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    color:rgba(1, 56, 255, 0.631);
+  }
+  .background-image-right {
+    top: 20%;
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    right: 0;
+    z-index: -4;
+  }
+  
+  /************ Projects Css ************/
+  .contact {
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    padding: 60px 0 200px 0;
+  }
+  .contact img {
+    width: 92%;
+  }
+  .contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .contact form input, .contact form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form input:focus, .contact form textarea:focus {
+    background: rgba(255, 255, 255, 1);
+    color: #121212;
+  }
+  .contact form input::placeholder, .contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+    color: #121212;
+    opacity: 0.8;
+  }
+  .contact form button {
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 48px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button span {
+    z-index: 1;
+    position: relative;
+  }
+  .contact form button:hover {
+    color: #fff;
+  }
+  .contact form button::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .contact form button:hover::before {
+    width: 100%;
+  }
+  

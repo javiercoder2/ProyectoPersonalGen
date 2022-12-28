@@ -161,3 +161,140 @@
   
   @media screen and (max-width: 768px) {
   }
+
+
+  #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+
+.swiper {
+  width: 1550px;
+  height: 600px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 90px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-image: url(https://res.cloudinary.com/teepublic/image/private/s--bbUQ3h9g--/c_crop,x_10,y_10/c_fit,h_1109/c_crop,g_north_west,h_1260,w_945,x_-77,y_-76/co_rgb:000000,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_945/fl_layer_apply,g_north_west,x_-77,y_-76/bo_105px_solid_white/e_overlay,fl_layer_apply,h_1260,l_Misc:Art%20Print%20Bumpmap,w_945/e_shadow,x_6,y_6/c_limit,h_1134,w_1134/c_lpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_630,q_90,w_630/v1539274051/production/designs/3302114_0.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-image: url(https://c8.alamy.com/zoomses/9/a307ca0132c0446eb79a4abebcffd901/ph8262.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-image: url(https://repository-images.githubusercontent.com/259018719/0663e880-8a02-11ea-9c75-44ca9a90cc1f);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(6n) {
+  background-image: url(https://i.ytimg.com/vi/Ng2ZWCWNmoU/maxresdefault.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(7n) {
+  background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/difference_between_sql_and_mysql.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(8n) {
+  background-image: url(https://blog.logrocket.com/wp-content/uploads/2022/09/automating-api-tests-postman.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(9n) {
+  background-image: url(https://1000marcas.net/wp-content/uploads/2020/02/GitHub-logo-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}
+
+.swiper-slide:nth-child(10n) {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(99, 5, 171, 0.89);
+  font-size: 110px;
+}

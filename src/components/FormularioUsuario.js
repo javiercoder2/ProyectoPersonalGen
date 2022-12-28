@@ -1,27 +1,26 @@
 import React, { useState, useEffect } from "react";
+import BotonFormulario from "./Boton";
 
-//creamos formulario para poder comenzar con la realizacion de botones y sus funciones
 const initialUsuario = {
   name: "",
-  lastname: "",
+  lastName: "",
   correo: "",
   id: "",
 };
 
-const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUser  }) => {
+const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, userEdit }) => {
   const [usuario, setUsuario] = useState(initialUsuario);
-  const { name, lastname, correo, id } = usuario;
+  const { name, lastName, correo, id } = usuario;
   //el hook useEffect siempre esta pendiente de si la variable que tiene dentro de
   //sus corchetes cambia el deberá hacer todo loq ue tiene en su funcion dentro
   //CONSIDERACIÓN es que useEffect siempre corre al menos 1 vez cuando la página carga por primera vez
   useEffect(() => {
     if (usuarioEditado !== null) {
       setUsuario(usuarioEditado);
-      //Usuario editad se realizara su propio cambio acorde a lo que esta en else
     } else {
       setUsuario({
         name: "",
-        lastname: "",
+        lastName: "",
         correo: "",
         id: "",
       });
@@ -54,16 +53,15 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUse
 
         <div class="mb-3">
           <label class="form-label" for="id">
-            Rut
+            ID
           </label>
           <input
             class="form-control"
-            placeholder="322312312-1"
             type="text"
             id="id"
-            //para que mi formulario sea capaz de crear un usuario debemos agregarle a los inpur
+            //para que mi formulario sea capaz de crear un usuario debemos agregarle a los input
             //lo siguente
-            name="rut"
+            name="id"
             value={id}
             onChange={handleInputChange}
             disabled
@@ -71,11 +69,11 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUse
         </div>
         <div class="mb-3">
           <label class="form-label" for="id">
-            name
+            Nombre
           </label>
           <input
             class="form-control"
-            placeholder="Javier"
+            placeholder="Juan"
             type="text"
             id="Nombre"
             name="name"
@@ -85,15 +83,15 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUse
         </div>
         <div class="mb-3">
           <label class="form-label" for="id">
-            lastname
+            Apellido
           </label>
           <input
             class="form-control"
-            placeholder="sepulveda"
+            placeholder="Perez"
             type="text"
             id="Apellido"
-            name="lastname"
-            value={lastname}
+            name="lastName"
+            value={lastName}
             onChange={handleInputChange}
           />
         </div>
@@ -103,12 +101,11 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUse
           </label>
           <input
             class="form-control"
-            placeholder="javier@correo.cl"
+            placeholder="juanperez@correo.cl"
             type="email"
             id="Correo"
             name="correo"
             value={correo}
-            //Cuando exista un cambio se procedera a realizar una accion
             onChange={handleInputChange}
           />
         </div>
@@ -116,25 +113,21 @@ const FormularioUsuario = ({ userAdd, usuarioEditado, setUsuarioEditado, editUse
           <button
             type="button"
             class="btn btn-success"
-                        //Cuando exista un click en el boton se procedera a realizar una accion
-
-            onClick={() => editUser(usuario)}
+            onClick={() => userEdit(usuario)}
           >
             Editar usuario
           </button>
         ) : (
           <button
-    //Cuando exista un click en el boton se procedera a realizar una accion
             type="button"
             class="btn btn-success"
             onClick={() => userAdd(usuario)}
           >
-            Ingresar usuario nuevo
+            Ingresar usuario
           </button>
         )}
 
         {usuarioEditado !== null ? (
-                                  //Cuando exista un click en el boton se procedera a realizar una accio
           <button
             type="button"
             class="btn btn-danger"

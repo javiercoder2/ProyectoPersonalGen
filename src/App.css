@@ -6,13 +6,10 @@
     margin: 0;
   }
   
-  .home,
   .professional,
   .personal,
-  .contact-us,
-  .sign-up,
-  .marketing,
-  .consulting {
+  .proyecto,
+  .Me {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -21,66 +18,41 @@
     margin: 0;
   }
   
-  .home {
-    background-image: url('./img/conejo.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-    margin: 0;
-  }
-  
   .professional {
-    background-image: url('./img/img-5.jpg');
+    background-image: url('./img/profesional.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: rgba(99, 5, 171, 0.89);
+    font-style: 'italic';
+    font-size: 110px;
   }
   
-  .products {
-    background-image: url('./img/conejo.webp');
+  .personal {
+    background-image: url(https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg);
+
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: rgba(99, 5, 171, 0.89);
+    font-size: 110px;
   }
-  
-  .contact-us {
-    background-image: url('./img/conejo.webp');
+
+  .Me {
+    background-image: url(https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: rgba(99, 5, 171, 0.89);
+    font-size: 110px;
   }
-  
-  .sign-up {
-    background-image: url('./img/conejo.webp');
+
+  .proyecto {
+    background-image: url('https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+    color: rgba(99, 5, 171, 0.89);
+    font-size: 110px;
   }
   
-  .marketing {
-    background-image: url('./img/user.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .consulting {
-    background-image: url('./img/conejo.webp');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }

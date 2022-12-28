@@ -9,7 +9,7 @@ const TablaUsuarios = ({ usuarios, deleteUser, setUsuarioEditado }) => {
       <table class="table">
         <thead>
           <tr>
-            <th>Rut</th>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Correo</th>
@@ -24,7 +24,7 @@ const TablaUsuarios = ({ usuarios, deleteUser, setUsuarioEditado }) => {
             <tr>
               <td>{usuario.id}</td>
               <td>{usuario.name}</td>
-              <td>{usuario.lastname}</td>
+              <td>{usuario.lastName}</td>
               <td>{usuario.correo}</td>
               <td>
                 <button

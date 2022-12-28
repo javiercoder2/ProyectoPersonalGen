@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import video from "./../Assets/video.mp4";
 import "./Boton2";
 
@@ -23,4 +23,4 @@ const BackgroundComponent = ()=> {
             </div></>
     )
 }
-export default BackgroundComponent;
+export default BackgroundComponent; */

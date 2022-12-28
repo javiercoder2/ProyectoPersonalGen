@@ -3,6 +3,7 @@ import '../App.css';
 import Menu from '../components/Menu';
 import '../components/Navbar.css';
 import CardsProfessional from '../components/CardsProffesional';
+import Footer from '../components/footer';
 
 
 const Professional = () => {
@@ -10,9 +11,10 @@ const Professional = () => {
         <div>
             <Menu />
             <div>
-            <h1 className='professional'>Professional Background</h1>
+            <h1 className='professional fst-italic'>Professional Background</h1>
             </div>
             <CardsProfessional/>
+            <Footer/>
 
         </div>
     )
