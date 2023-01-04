@@ -196,7 +196,7 @@ body {
 
 
 .swiper {
-  width: 1550px;
+  width: 900px;
   height: 600px;
 }
 
@@ -295,6 +295,12 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgba(99, 5, 171, 0.89);
   font-size: 110px;
 }
+
+
+
+
+
+
+

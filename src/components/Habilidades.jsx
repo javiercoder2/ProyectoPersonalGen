@@ -20,7 +20,7 @@ export default function Habilidades() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Revisa mis Habilidades</SwiperSlide>
+        <SwiperSlide>Revisa mis Conocimientos de Tecnologias</SwiperSlide>
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>

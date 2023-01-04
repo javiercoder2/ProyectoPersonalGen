@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        Si deseas saber mas sobre mi personalmente
+        If you'd like to know more about me, contact me!
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -36,27 +36,25 @@ function Footer() {
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
+            <h2>Contact Me</h2>
             <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <Link to='/'>Address</Link>
+            <Link to='/'>Videos in youtube</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <Link to='/'>CV Vido</Link>
+            <Link to='/'>Linux and commands</Link>
+            <Link to='/'>Front-end Videos</Link>
+            <Link to='/'>Back-end Vidos</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
+            <Link to='/'>GibHub</Link>
             <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='/'>Linkedin</Link>
           </div>
         </div>
       </div>
@@ -64,52 +62,52 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              Javier_Coder
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>Javier_Coder, 2022</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+          <Link
+                              class='social-icon-link youtube'
+                              to='/'
+                              target='_blank'
+                              aria-label='Youtube'
+                          >
+                              <i class='fab fa-youtube' />
+                          </Link>
+                          <Link
+                              class='social-icon-link twitter'
+                              to='/'
+                              target='_blank'
+                              aria-label='Twitter'
+                          >
+                              <i class='fab fa-twitter' />
+                          </Link>
+                          <Link
+                              class='social-icon-link linkedin'
+                              to='/'
+                              target='_blank'
+                              aria-label='LinkedIn'
+                          >
+                              <i class='fab fa-linkedin' />
+                          </Link>
+                          <Link
+                              class='social-icon-link github'
+                              to='/'
+                              target='_blank'
+                              aria-label='github'
+                          >
+                              <i class='fab fa-github' />
+                          </Link>
+                          <Link
+                              class='social-icon-link whatsapp'
+                              to='/'
+                              target='_blank'
+                              aria-label='github'
+                          >
+                              <i class='fab fa-whatsapp' />
+                          </Link>
           </div>
         </div>
       </section>

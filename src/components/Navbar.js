@@ -116,7 +116,7 @@ function Navbar() {
               </a>
           </nav>
           <div className='hero-container'>
-              <video src="/fondo3.mp4" autoPlay loop muted />
+              <video src="images/fondo3.mp4" autoPlay loop muted />
 
               <h1 className="fst-italic">Javier Ignacio  Sepulveda Ojeda</h1>
               <p>Contact Me and do some amazing things together!</p>
@@ -135,7 +135,7 @@ function Navbar() {
                   >
                       Watch an Intro about Me <i className='far fa-play-circle' />
                   </Button>
-                  ;
+                  
               </div>
           </div>
       </><div className='cards'>
@@ -144,29 +144,29 @@ function Navbar() {
                   <div className='cards__wrapper'>
                       <ul className='cards__items'>
                           <CardItem
-                              src='images/img-6.jpg'
+                              src='images/tico5.jpg'
                               text='Exploration of new Languages. I speak four of them!'
                               label='Polyglot'
                               path='/services' />
                           <CardItem
-                              src='images/img-7.jpg'
+                              src='images/tico9.JPG'
                               text='Self-Instructing by nature'
                               label='Learning'
                               path='/services' />
                       </ul>
                       <ul className='cards__items'>
                           <CardItem
-                              src='images/img-5.jpg'
+                              src='images/tico8.jpg'
                               text='These are my Best Programming Languages'
                               label='Programming Languages '
                               path='/services' />
                           <CardItem
-                              src='images/img-9.jpg'
+                              src='images/tico3.jpg'
                               text='Personal skills which are part of me'
                               label='Soft Skills'
                               path='/products' />
                           <CardItem
-                              src='images/user.png'
+                              src='images/tico7.jpg'
                               text='The things I love to do and how I see myself at work'
                               label='Hobbies and Likes'
                               path='/sign-up' />
@@ -176,7 +176,7 @@ function Navbar() {
           </div></><div className='footer-container'>
               <section className='footer-subscription'>
                   <p className='footer-subscription-heading'>
-                      Contact me and let`s talk
+                      Contact me and let's talk
                   </p>
                   <p className='footer-subscription-text'>
                       Send me an Email so we can get in touch
