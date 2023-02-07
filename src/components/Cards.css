@@ -116,3 +116,29 @@
       margin-bottom: 2rem;
     }
   }
+
+  .flags{
+    position: absolute;
+    top: 120px;
+    right: 0;
+    left: 1;
+    width: 100%;
+    max-width: 60%;
+    height: 60%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  .cardtitle{
+    position: relative;
+    left: 100;
+    width: 20%;
+    max-width: 1000%;
+    height: 15%;
+    font-size: 32px;
+  }
+  .progress{
+    width: 40%;
+    max-width: 70%;
+    background-color: rgb(129, 60, 60);
+  }

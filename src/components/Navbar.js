@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Boton2";
 import './Boton2.css';
-import './Hsection.css';
 import './Cards.css';
 import CardItem from './CardItem';
 import './footer.css';
-import CV from "../img/Javier_Sepulveda_CV_English.pdf";
+import CV from "../img/CvJavierSepulveda.jpg";
 import "./Me.css";
+/* import video from "../img/fondo3.mp4";
+ */import {Carousel} from 'react-bootstrap'
 
 
 function Navbar() {
@@ -116,27 +117,153 @@ function Navbar() {
               </a>
           </nav>
           <div className='hero-container'>
-              <video src="images/fondo3.mp4" autoPlay loop muted />
-
-              <h1 className="fst-italic">Javier Ignacio  Sepulveda Ojeda</h1>
+            
+{/*               <video width="750" height="500" autoPlay loop muted >
+                <source src={video} type="video/mp4"/>
+               </video> */}
+               <Carousel>
+                <Carousel.Item interval={10000}>
+                    <img
+                        className="d-block w-100"
+                        src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        
+                    />
+                    <div className='Prueba'>
+                    <Carousel.Caption className="Carousel.Caption">
+                    <form className="Prueba2" role="search">
+                
+                    <h1 id="name"className="fst-italic" >Javier Ignacio  Sepulveda Ojeda</h1>
               <p>Contact Me and do some amazing things together!</p>
-              <div className="hero-btns">
-                  <Button
-                      className="btns"
-                      buttonStyle="btn--outline"
-                      buttonSize="btn--large"
-                  >
-                      Starting
-                  </Button>
-                  <Button
-                      className="btns"
-                      buttonStyle="btn--primary"
-                      buttonSize="btn--large"
-                  >
-                      Watch an Intro about Me <i className='far fa-play-circle' />
-                  </Button>
-                  
+              </form>
+              <div id="buttonintro" className="hero-btns">
+
+                  <iframe id="cvvideo" width="650" height="350" src="https://www.youtube.com/embed/kbmPtX9wXGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
               </div>
+                    
+                 </Carousel.Caption>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item interval={10000}>
+                    <img
+                        className="d-block w-100"
+                        src="https://images.pexels.com/photos/96381/pexels-photo-96381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Second slide"
+                    />
+                                    <div className='Prueba'>
+
+                    <Carousel.Caption>
+                    <form className="Prueba2" role="search">
+                
+                <h1 id="name" className="fst-italic">I know React, Java, JS, Python, MySql</h1>
+          <p>And so many more!</p>
+          </form>
+          <div id="buttonintro"className="hero-btns">
+
+              <Button
+                  className="btns"
+                  buttonStyle="btn--outline"
+                  buttonSize="btn--large"
+                  
+              >
+                  Check my Projects
+              </Button>
+              <Button
+                  className="btns"
+                  buttonStyle="btn--primary"
+                 buttonSize="btn--large"
+               
+              >
+                
+                  Watch an Intro about Me <i className='far fa-play-circle' />
+              </Button>
+              
+          </div>
+                
+                    </Carousel.Caption>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Third slide"
+                    />
+                    <div className='Prueba'>
+                    <Carousel.Caption>
+                    <form className="Prueba2" role="search">
+                
+                <h1 id="name"className="fst-italic">I have experience working with international customers</h1>
+          <p>+6 years working with people from India, Canada, Finland, USA, Brazil, Peru, among other countries!</p>
+          </form>
+          <div id="buttonintro"className="hero-btns">
+              <Button
+                  className="btns"
+                  buttonStyle="btn--outline"
+                  buttonSize="btn--large"
+              >
+                  Check my Projects
+              </Button>
+
+              <Button
+                  className="btns"
+                  buttonStyle="btn--primary"
+                 buttonSize="btn--large"
+               
+              >
+                        <a href="https://www.linkedin.com/in/Javiersepulveda/" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
+                              aria-label='Twitter'
+                              >
+
+                            </a>
+                  Watch an Intro about Me
+              </Button>
+              
+          </div>
+                
+                    </Carousel.Caption>
+                    </div>
+                </Carousel.Item>
+                
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="https://images.pexels.com/photos/1309766/pexels-photo-1309766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Third slide"
+                    />
+                    <div className='Prueba'>
+                    <Carousel.Caption>
+                    <form className="Prueba2" role="search">
+                
+                <h1 id="name" className="fst-italic">Skills related to team work and acknowledged methodologies</h1>
+          <p>Agile Methodology, active listening, collaboration, tima management and critical thinking</p>
+          </form>
+          <div id="buttonintro" className="hero-btns">
+              <Button
+                  className="btns"
+                  buttonStyle="btn--outline"
+                  buttonSize="btn--large"
+              >
+                  Check my Projects
+              </Button>
+              <Button
+                  className="btns"
+                  buttonStyle="btn--primary"
+                  buttonSize="btn--large"
+              >
+                  Watch an Intro about Me <i className='far fa-play-circle' />
+              </Button>
+              
+          </div>
+                
+                    </Carousel.Caption>
+
+                    </div>
+                </Carousel.Item>
+            </Carousel>
+
+
           </div>
       </><div className='cards'>
               <h1 className="fst-italic">Check Out These Facts</h1>
@@ -144,32 +271,32 @@ function Navbar() {
                   <div className='cards__wrapper'>
                       <ul className='cards__items'>
                           <CardItem
-                              src='images/tico5.jpg'
+                              src='images/imagenidiomas.jpg'
                               text='Exploration of new Languages. I speak four of them!'
                               label='Polyglot'
-                              path='/services' />
+                              path='/Polyglot' />
                           <CardItem
-                              src='images/tico9.JPG'
+                              src='images/imagenautodidacta.JPG'
                               text='Self-Instructing by nature'
                               label='Learning'
-                              path='/services' />
+                              path='/Learning' />
                       </ul>
                       <ul className='cards__items'>
                           <CardItem
-                              src='images/tico8.jpg'
+                              src='images/tico8.JPG'
                               text='These are my Best Programming Languages'
                               label='Programming Languages '
-                              path='/services' />
+                              path='/Personal' />
                           <CardItem
-                              src='images/tico3.jpg'
+                              src='images/tico3.JPG'
                               text='Personal skills which are part of me'
                               label='Soft Skills'
-                              path='/products' />
+                              path='/Personal' />
                           <CardItem
-                              src='images/tico7.jpg'
+                              src='images/tico7.JPG'
                               text='The things I love to do and how I see myself at work'
                               label='Hobbies and Likes'
-                              path='/sign-up' />
+                              path='/Me' />
                       </ul>
                   </div>
               </div>
@@ -196,16 +323,20 @@ function Navbar() {
                   <div className='footer-link-wrapper'>
                       <div class='footer-link-items'>
                           <h2>About Javier</h2>
-                          <Link to='/sign-up'>How I work</Link>
-                          <Link to='/'>Certifications</Link>
-                          <Link to='/'>Careers</Link>
-                          <Link to='/'>Preference of Work Environment</Link>
-                      </div>
+                          <Link to='/Professional'>How I work</Link>
+                          <Link to='/Certifications'>Certifications</Link>
+                          <Link to='/Career'>Careers</Link>
+                          <a href="https://www.indeed.com/career-advice/finding-a-job/different-work-environment-types">
+                          Preference of Work environments
+                          </a>                      </div>
                       <div class='footer-link-items'>
                           <h2>Contact Me</h2>
-                          <Link to='/'>Contact</Link>
-                          <Link to='/'>Address</Link>
-                          <Link to='/'>Videos in Youtube</Link>
+                          <a href="https://javier-sepulveda.online/">
+                          Contact in Spanish
+                          </a>
+                          <a href="https://javier-sepulveda.online/">
+                          Address
+                          </a>
                       </div>
                   </div>
                   <div className='footer-link-wrapper'>
@@ -218,7 +349,7 @@ function Navbar() {
                       </div>
                       <div class='footer-link-items'>
                           <h2>Social Media</h2>
-                          <Link to='/'>GitHub</Link>
+                          <Link to='https://www.youtube.com/watch?v=nN-SuhgTWF0&list=PLJY0BeTKoGAyibBAMAIqdnUDH5mIW4eQg&index=4'>GitHub</Link>
                           <Link to='/'>Youtube</Link>
                           <Link to='/'>Linkedin</Link>
                       </div>
@@ -235,46 +366,42 @@ function Navbar() {
                       <small class='website-rights'>Javier_Coder, 2022</small>
                       <div class='social-icons'>
 
-                          <Link
-                              class='social-icon-link youtube'
-                              to='/'
-                              target='_blank'
-                              aria-label='Youtube'
-                          >
-                              <i class='fab fa-youtube' />
-                          </Link>
-                          <Link
-                              class='social-icon-link twitter'
-                              to='/'
-                              target='_blank'
+
+                      <a href="https://www.youtube.com/@javiersepulveda8906" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
                               aria-label='Twitter'
-                          >
+                              >
+                              <i class='fab fa-youtube' />
+
+                            </a>
+                            <a href="https://google.com" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
+                              aria-label='Twitter'
+                              >
                               <i class='fab fa-twitter' />
-                          </Link>
-                          <Link
-                              class='social-icon-link linkedin'
-                              to='/'
-                              target='_blank'
-                              aria-label='LinkedIn'
-                          >
-                              <i class='fab fa-linkedin' />
-                          </Link>
-                          <Link
-                              class='social-icon-link github'
-                              to='/'
-                              target='_blank'
-                              aria-label='github'
-                          >
+
+                            </a>
+                            <a href="https://github.com/javiercoder2" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
+                              aria-label='Twitter'
+                              >
                               <i class='fab fa-github' />
-                          </Link>
-                          <Link
-                              class='social-icon-link whatsapp'
-                              to='/'
-                              target='_blank'
-                              aria-label='github'
-                          >
+
+                            </a>
+                            <a href="https://wa.link/vyicxb" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
+                              aria-label='Twitter'
+                              >
                               <i class='fab fa-whatsapp' />
-                          </Link>
+
+                            </a>
+                            <a href="https://www.linkedin.com/in/Javiersepulveda/" target="_bKJk" rel="noreferrer"
+                            class='social-icon-link youtube'
+                              aria-label='Twitter'
+                              >
+                              <i class='fab fa-linkedin' />
+
+                            </a>
                       </div>
                   </div>
               </section>

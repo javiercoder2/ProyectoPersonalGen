@@ -9,7 +9,8 @@
   .professional,
   .personal,
   .proyecto,
-  .Me {
+  .Me,
+  .languages {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -23,9 +24,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgba(99, 5, 171, 0.89);
+    color: white;
     font-style: 'italic';
     font-size: 110px;
+    
   }
   
   .personal {
@@ -34,7 +36,7 @@
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
-    color: rgba(99, 5, 171, 0.89);
+    color: white;
     font-size: 110px;
   }
 
@@ -43,7 +45,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgba(99, 5, 171, 0.89);
+    color: white;
+
     font-size: 110px;
   }
 
@@ -52,7 +55,29 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgba(99, 5, 171, 0.89);
+    color: white;
     font-size: 110px;
   }
+  .languages {
+    background-image: url(https://images.pexels.com/photos/6375/quote-chalk-think-words.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 110px;
+  }
+  .learning{
+    background-image: url(https://images.pexels.com/photos/390394/pexels-photo-390394.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 1519px;
+    left: 50%;
+    height: 900px;
+    max-height: 200%;
+    font-size: 90px;
+    
+  }
+  
   

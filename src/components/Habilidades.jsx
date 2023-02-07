@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHandSparkles, faAnchor } from '@fortawesome/free-solid-svg-icons'
 
 // Import Swiper styles
 import "swiper/css";
@@ -20,9 +22,9 @@ export default function Habilidades() {
         modules={[EffectCards]}
         className="mySwiper"
       >
-        <SwiperSlide>Revisa mis Conocimientos de Tecnologias</SwiperSlide>
-        <SwiperSlide></SwiperSlide>
-        <SwiperSlide></SwiperSlide>
+        <SwiperSlide><h1 className="skills"><FontAwesomeIcon icon={faHandSparkles} /> Check My Programming Skills by Swipping</h1><FontAwesomeIcon icon={faHandSparkles} /></SwiperSlide>
+        <SwiperSlide>
+        </SwiperSlide>
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>
         <SwiperSlide></SwiperSlide>

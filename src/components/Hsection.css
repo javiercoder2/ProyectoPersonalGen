@@ -31,11 +31,12 @@ video {
     font-size:25px;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-.here-btns {
+.hero-btns {
     margin-top:32px;
 }
 .hero-btns .btn {
     margin : 6px;
+    
 }
 .fa-play-circle {
     margin-left: 4px;

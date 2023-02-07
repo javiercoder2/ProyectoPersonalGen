@@ -13,7 +13,10 @@ import HSectionPage from "./pages/HsectionPage";
 import UsuarioClasePage from './pages/Usuario';
 import Me from './pages/Me';
 import Project from './pages/Projects';
-
+import PolyglotPage from './pages/Polyglot';
+import LearningPage from './pages/Learning';
+import CertificationsPage from './pages/Certifications';
+import CareerPage from './pages/career';
 
 const App = ()=> {
     return(
@@ -30,6 +33,10 @@ const App = ()=> {
                 <Route path="/H" element={<HSectionPage/>}/>
                 <Route path="/Me" element={<Me/>}/>
                 <Route path="/Project" element={<Project/>}/>
+                <Route path="/Learning" element={<LearningPage/>}/>
+                <Route path="/Polyglot" element={<PolyglotPage/>}/>
+                <Route path="/Certifications" element={<CertificationsPage/>}/>
+                <Route path="/Career" element={<CareerPage/>}/>
 
             </Routes>
         </BrowserRouter>

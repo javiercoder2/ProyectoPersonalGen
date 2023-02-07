@@ -196,8 +196,8 @@ body {
 
 
 .swiper {
-  width: 900px;
-  height: 600px;
+  width: 850px;
+  height: 550px;
 }
 
 .swiper-slide {
@@ -207,15 +207,21 @@ body {
   border-radius: 90px;
   font-size: 42px;
   font-weight: bold;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.978);
 }
+.skills{
+  color:white;
+  font-weight: bold;
+  font-size: 52px;
 
+}
 .swiper-slide:nth-child(1n) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: rgba(99, 5, 171, 0.89);
+  background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  color: white;
   font-size: 110px;
+  left: 10%;
+  height: 500px;
+  max-height: 200%;
 }
 
 .swiper-slide:nth-child(2n) {
@@ -289,17 +295,6 @@ body {
   color: rgba(99, 5, 171, 0.89);
   font-size: 110px;
 }
-
-.swiper-slide:nth-child(10n) {
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 110px;
-}
-
-
-
 
 
 

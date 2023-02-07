@@ -29,7 +29,7 @@ export const Button = ({
     ? buttonStyle
     : STYLES[0];
 
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[1];
 
   return (
     <Link to='/Project' className='btn-mobile'>

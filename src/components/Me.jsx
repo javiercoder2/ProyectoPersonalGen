@@ -5,17 +5,18 @@ import Info from "./Info";
 
 function About() {
   return (
+
     <section className="about section" id="about">
       <h2 className="section__title">My interests and things I Like/Love</h2>
       <span className="section__subtitle">My Personal World</span>
       <div id="contain2"className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img id="imagewidth"src="https://i.pinimg.com/originals/f3/5e/e6/f35ee6827f01f0ea352fa366cd81eac9.png" alt="" className="about__img" />
       <div className="about__data">
       <Info />
 
       <p style={{textAlign:"justify"}} className ="about__description">All these things have made me who I am nowadays. I learned so much from them, from ways to make strategies, teamwork, analysis and to get into deep knowledge in certain topics, to create empathy, social contact with people in my country and around the globe. Communication and self-learning were the main tools I received from these three hobbies.
       </p>
-      <a download=""  href={CV} className="button
+      <a download="" href={CV} className="button
         button--flex"> Download Resume
       <svg 
                 class="button__icon"
@@ -46,6 +47,7 @@ function About() {
                 </div>
               </div>
     </section>
+    
   );
 }
 export default About;

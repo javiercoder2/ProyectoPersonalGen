@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "./Boton2";
 import './Boton2.css';
-import CV from "../img/Javier_Sepulveda_CV_English.pdf";
+import CV from "../img/CvJavierSepulveda.jpg";
 
 
 function Menu() {

@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
 
@@ -11,34 +11,34 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='./img/conejo.webp'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              text=''
+              label=''
               path='/Me'
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
-              path='/Professional'
+              text=''
+              label=''
+              path='/'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/Personal'
+              text=''
+              label=''
+              path='/'
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              text=''
+              label=''
               path='/Home'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              text='r'
+              label=''
               path='/sign-up'
             />
           </ul>
@@ -48,4 +48,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default Cards; */

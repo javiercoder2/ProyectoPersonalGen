@@ -2,8 +2,19 @@
     grid-template-columns : repeat (2, 1fr);
     align-items: center;
     column-gap: 4rem;
-    
-
+  
+}
+#imagewidth{
+  border-radius:1.5rem;
+  justify-self:center;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: 1px solid;
+  background-color: var(--title-color);
+  color: var(--container-color);
+  padding: 0.50rem 1rem;
+  border-radius: 1.4rem;
+  width: 100%;
 }
 
 #resume{
@@ -24,7 +35,7 @@
 }
 
 .about__img{
-    width:350px;
+    width:750px;
     border-radius:1.5rem;
     justify-self:center;
 }
@@ -240,6 +251,8 @@ font-size: 16px;
     display: inline-flex;
     align-items: center;
   }
+
+
   
   /*=============== BREAKPOINTS ===============*/
   /* For large devices */

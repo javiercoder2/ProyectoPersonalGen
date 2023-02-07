@@ -1,0 +1,46 @@
+.cube{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 300px;
+    position: absolute;
+    left: 36%;
+    top: 55%;
+    margin-top: -150px;
+}
+.images9{
+    width: 10px;
+    height: 600px;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100%;
+}
+.legend{
+    width: 600px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    background-color: transparent;
+    height: 100px;
+    position: absolute;
+    display: block;
+    position: absolute;
+    left: -60%;
+    top: 35%;
+    margin-top: -150px;
+    font-size:35px;
+    color: black;
+}
+.icono{
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:500px;
+    color: rgba(237, 2, 18, 0.861);
+}
